@@ -1,0 +1,3 @@
+[submodule "initial-setup"]
+	path = initial-setup
+	url = ../initial-setup.git
