@@ -1,34 +1,39 @@
 
 Define the problem
-A Cat, a Parrot, and a Bag of Seed
-
+a.  A Cat, a Parrot, and a Bag of Seed
+    1. A man has a cat, a parrot, and a bag of seed that he needs to get from point A to point B using a small boat.
+    The boat only has room for 1 other occupant (cat, parrot, or seed). The problem is that because he must take one at
+    a time he needs a way to ensure to that either the cat doesn't eat the parrot whilst he is away or the parrot
+    doesn't eat the seed.
+    2.
+    3. The overall goal is to find a way for the man to safely deliver the cat, parrot, and bag of seed to point B.
 b.	Socks in the Dark
 
 c.	Predicting Fingers
 
 2)	Break the problem apart
-A Cat, a Parrot, and a Bag of Seed
+a.  A Cat, a Parrot, and a Bag of Seed
 
 b.	Socks in the Dark
 
 c.	Predicting Fingers
 
 3)	Identify potential solutions
-A Cat, a Parrot, and a Bag of Seed
+a.  A Cat, a Parrot, and a Bag of Seed
 
 b.	Socks in the Dark
 
 c.	Predicting Fingers
 
 4)	Evaluate each potential solution
-A Cat, a Parrot, and a Bag of Seed
+a.  A Cat, a Parrot, and a Bag of Seed
 
 b.	Socks in the Dark
 
 c.	Predicting Fingers
 
 5)	Choose a solution and develop a plan to implement it
-A Cat, a Parrot, and a Bag of Seed
+a.  A Cat, a Parrot, and a Bag of Seed
 
 b.	Socks in the Dark
 
