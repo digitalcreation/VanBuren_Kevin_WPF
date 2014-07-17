@@ -7,7 +7,5 @@
 
 var sparkysAge = prompt("Enter Sparky's age:");
 var dogYears = sparkysAge * 7;
-var result = "Sparky is " + sparkysAge + " years old which is " + dogYears + " in dog years.";
+var result = "Sparky is " + sparkysAge + " human years old which is " + dogYears + " in dog years.";
 alert(result);
-
-console.log;
