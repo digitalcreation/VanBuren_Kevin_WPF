@@ -16,7 +16,7 @@ console.log(espSold); //
 
 var ts1Dollars = 160; //
 console.log(ts1Dollars); //
-var totalSold = (ts1Sold) + (ts2Sold) + (espSold); //
+var totalSold = parseFloat(ts1Sold) + parseFloat(ts2Sold) + parseFloat(espSold); //
 console.log(totalSold); //
 
 //console.log();
