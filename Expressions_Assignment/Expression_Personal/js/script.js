@@ -24,7 +24,7 @@ console.log(bagDayconvert); //Added console.log to track number converted
 var foodAnswer = "Your current bag of dog food will be gone in "+ bagDayconvert + " days."; //Shows the user how many days before they will be out of the current bag of dog food.
 alert(foodAnswer); //Shows the user how many days before they will be out of the current bag of dog food.
 
-var daysAnswer = "If you want your dog food to last " + daysFood + " you will need to purchase " + "X" + " bags of dog food."; //Variable for final alert.
+var daysAnswer = "If you plan on your next purchase to last " + daysFood + " days you will need to purchase " + "X" + " bags of " + bagSize + " pound dog food."; //Variable for final alert.
 alert(daysAnswer); //Prompts user for how many bags of food will be needed.
 //Your current bag of dog food will be gone in X days.
-//If you want your dog food to last X days then you will need to purchase X bags of food.
+//If you plan on your next purchase to last X days you will need to purchase X bags of X pound dog food.
