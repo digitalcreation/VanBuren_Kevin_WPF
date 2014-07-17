@@ -37,11 +37,13 @@ console.log(attachRate + " :Attach rate" ); //Added to make sure things are bein
 var attachRateAnswer = "Your have a current Total Support attachment rate of " + attachRate +"%.";
 console.log(attachRateAnswer + " :Attachment rate answer - before the user alert."); //
 
-
 var hoursDayAnswer = "You have sold $" + dollarsHour + " per hour today!"; //
 console.log(hoursDayAnswer + " :Dollars per day answer - before the user alert."); //Added to make sure the variable hoursDayAnswer is working correctly.
 alert(hoursDayAnswer); //
 console.log(hoursDayAnswer + " :User alert for dollars sold per day."); //Added to make sure the alert is working properly.
+
+alert(attachRateAnswer);
+console.log(attachRateAnswer);
 
 
 //console.log();
