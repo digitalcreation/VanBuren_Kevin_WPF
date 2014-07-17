@@ -10,7 +10,7 @@ console.log(bagSize); //Added console.log to track number entered
 var cupDaily = prompt ("How many cups a day do you feed your dog?"); //Will need to know how many cups is being served a day to see how long it will last.
 console.log(cupDaily); //Added console.log to track number entered
 
-var daysFood = prompt ("How days before your next shopping trip?"); //Will need to determine if the desired days until next shopping trip will work.
+var daysFood = prompt ("How many days before your next shopping trip?"); //Will need to determine if the desired days until next shopping trip will work.
 console.log(daysFood); //Added console.log to track number entered
 
 //1 pound = 1.92 cups and 1 cup = .52 pounds
@@ -24,7 +24,7 @@ console.log(bagDayconvert); //Added console.log to track number converted
 var foodAnswer = "Your current bag of dog food will be gone in "+ bagDayconvert + " days."; //Shows the user how many days before they will be out of the current bag of dog food.
 alert(foodAnswer); //Shows the user how many days before they will be out of the current bag of dog food.
 
-var daysAnswer = "If you want your dog food to last " + daysFood + " you will need to purchase " + "X" + " bags of dog food.";
-alert(daysAnswer);
+var daysAnswer = "If you want your dog food to last " + daysFood + " you will need to purchase " + "X" + " bags of dog food."; //Variable for final alert.
+alert(daysAnswer); //Prompts user for how many bags of food will be needed.
 //Your current bag of dog food will be gone in X days.
 //If you want your dog food to last X days then you will need to purchase X bags of food.
