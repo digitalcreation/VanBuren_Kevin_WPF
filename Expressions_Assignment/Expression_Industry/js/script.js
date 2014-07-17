@@ -22,6 +22,8 @@ var ts2Dollars = 250 * ts2Sold; //This is used to find how many $'s in 2 year to
 console.log(ts2Dollars); //Added to make sure things are being calculated correctly.
 
 var totalSold = parseFloat(ts1Dollars) + parseFloat(ts2Dollars) + parseFloat(espSold); //
-console.log(totalSold); //
+console.log(totalSold); //Added to make sure things are being calculated correctly.
+var dollarsHour = totalSold / hoursWorked; //
+console.log(dollarsHour); //Added to make sure things are being calculated correctly.
 
 //console.log();
