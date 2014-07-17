@@ -2,10 +2,8 @@
 //Expression Assignment - Personal
 //July, 16 2014
 
-//The goal is to figure out how many days your dog food is going to last so you can better plan your shopping trips.
-
-
-
+//The goal is to figure out 2 things: 1) how long your current bag will last and 2) how long you want your next purchase to last. The result will provide the user with how many bags of food will
+// need to be purchased to last the desired amount of days.
 var bagSize = prompt ("How many pounds are in your dog food bag?"); //Will need to know how large the bag is to determine how long it will last.
 console.log(bagSize); //Added console.log to track number entered
 
@@ -26,8 +24,8 @@ console.log(bagDayconvert); //Added console.log to track number converted
 var foodAnswer = "Your current bag of dog food will be gone in "+ bagDayconvert + " days."; //Shows the user how many days before they will be out of the current bag of dog food.
 alert(foodAnswer); //Shows the user how many days before they will be out of the current bag of dog food.
 
-var poundsDayconvert = (cupConvert) * (daysFood);
-var totalBags = poundsDayconvert / (bagSize);
+var poundsDayconvert = (cupConvert) * (daysFood); //Takes the cups to pound conversion and multiplies it by the entered days desired.
+var totalBags = poundsDayconvert / (bagSize); //Takes the previous conversion and divides it by the entered bag size to give the value of how bags will need to be purchased.
 
 var daysAnswer = "If you plan on your next purchase to last " + daysFood + " days you will need to purchase " + totalBags + " bags of " + bagSize + " pound dog food."; //Variable for final alert.
 alert(daysAnswer); //Prompts user for how many bags of food will be needed.
