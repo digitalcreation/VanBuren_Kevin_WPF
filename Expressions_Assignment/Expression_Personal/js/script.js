@@ -25,5 +25,6 @@ var foodAnswer = "Your current bag of dog food will be gone in "+ bagDayconvert 
 alert(foodAnswer); //Shows the user how many days before they will be out of the current bag of dog food.
 
 var daysAnswer = "If you want your dog food to last " + daysFood + " you will need to purchase " + "X" + " bags of dog food.";
+alert(daysAnswer);
 //Your current bag of dog food will be gone in X days.
 //If you want your dog food to last X days then you will need to purchase X bags of food.
