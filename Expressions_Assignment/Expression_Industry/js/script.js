@@ -13,10 +13,15 @@ var ts2Sold = prompt ("How many computer have 2 year Total Support attached?"); 
 console.log(ts2Sold); //
 var espSold = prompt ("How many dollars of ESP have you sold?"); //
 console.log(espSold); //
+var hoursWorked = prompt ("How many hours did you work today?"); //
+console.log(hoursWorked); //
 
-var ts1Dollars = 160; //
+var ts1Dollars = 150 * ts1Sold;//
 console.log(ts1Dollars); //
-var totalSold = parseFloat(ts1Sold) + parseFloat(ts2Sold) + parseFloat(espSold); //
+var ts2Dollars = 250 * ts2Sold; //
+console.log(ts2Dollars); //
+
+var totalSold = parseFloat(ts1Dollars) + parseFloat(ts2Dollars) + parseFloat(espSold); //
 console.log(totalSold); //
 
 //console.log();
