@@ -10,7 +10,7 @@ console.log(bagSize); //Added console.log to track number entered
 var cupDaily = prompt ("How many cups a day do you feed your dog?"); //Will need to know how many cups is being served a day to see how long it will last.
 console.log(cupDaily); //Added console.log to track number entered
 
-var daysFood = prompt ("How many days before your next shopping trip?"); //Will need to determine if the desired days until next shopping trip will work.
+var daysFood = prompt ("How many days would like your next dog food purchase to last?"); //Will need to determine if the desired days until next shopping trip will work.
 console.log(daysFood); //Added console.log to track number entered
 
 //1 pound = 1.92 cups and 1 cup = .52 pounds
