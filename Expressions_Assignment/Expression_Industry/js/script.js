@@ -14,7 +14,9 @@ console.log(ts2Sold); //
 var espSold = prompt ("How many dollars of ESP have you sold?"); //
 console.log(espSold); //
 
-var totalSold = ts1Soldold + ts2Sold + espSold; //
+var ts1Dollars = 160; //
+console.log(ts1Dollars); //
+var totalSold = (ts1Sold) + (ts2Sold) + (espSold); //
 console.log(totalSold); //
 
 //console.log();
