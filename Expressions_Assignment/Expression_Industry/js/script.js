@@ -26,4 +26,9 @@ console.log(totalSold); //Added to make sure things are being calculated correct
 var dollarsHour = totalSold / hoursWorked; //
 console.log(dollarsHour); //Added to make sure things are being calculated correctly.
 
+var hoursDayAnswer = "You have sold $" + dollarsHour + " per hour today!"; //
+console.log(hoursDayAnswer); //Added to make sure the variable hoursDayAnswer is working correctly.
+alert(hoursDayAnswer); //
+console.log(hoursDayAnswer); //Added to make sure the alert is working properly.
+
 //console.log();
