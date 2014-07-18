@@ -4,6 +4,9 @@
 
 //The goal is to figure out 2 things: 1) how long your current bag will last and 2) how long you want your next purchase to last. The result will provide the user with how many bags of food will
 // need to be purchased to last the desired amount of days.
+
+alert("The following prompts will show you how many days before your current bag of dog food is gone and how many bags you will need to purchase to last a desired amount of time."); //Allows the user to better understand what they will be entering.
+
 var bagSize = prompt ("How many pounds are in your current bag of dog food?"); //Will need to know how large the bag is to determine how long it will last.
 console.log(bagSize); //Added console.log to track number entered
 
