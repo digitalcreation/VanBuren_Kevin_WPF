@@ -3,9 +3,10 @@
 //July, 16 2014
 
 //The goal of this calculation is to show how many dollars ($) per hour of Service Plans and Tech a person is selling.
-//Possibly to figure out the attach rate.
 
-var computerSold = prompt ("How many computer have you sold or brought in for repair today?"); //I'm not sure I'm going to use this prompt.
+alert("The following prompts will allow you to see your total dollars of ESP and Tech sales made per hour and your average attachment rate for Total Support."); //Gives the user a better understanding of what they are entering.
+
+var computerSold = prompt ("How many computers have you sold or brought in for repair today?"); //I'm not sure I'm going to use this prompt.
 console.log(computerSold + ":How many computers sold or brought in for repair - entered by user."); //Added to show number entered by user.
 
 var ts1Sold = prompt ("How many computers have 1 year Total Support attached?"); //This will make it easier for the user to figure out how many $'s have been sold. They wont have to add up how many 1 and 2 years were sold.
