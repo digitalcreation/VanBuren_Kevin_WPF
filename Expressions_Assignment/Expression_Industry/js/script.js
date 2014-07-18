@@ -26,14 +26,15 @@ console.log(ts1Dollars + " :Number of 1 year TS sold * its $ value of 150."); //
 var ts2Dollars = 250 * ts2Sold; //This is used to find how many $'s in 2 year total support was sold.
 console.log(ts2Dollars + " :Number of 2 year TS sold * its $ value of 250."); //Added to make sure things are being calculated correctly.
 
-var totalSold = parseFloat(ts1Dollars) + parseFloat(ts2Dollars) + parseFloat(espSold); //This calculate the total dollars sold.
+var totalSold = parseFloat(ts1Dollars) + parseFloat(ts2Dollars) + parseFloat(espSold); //This calculates the total dollars sold.
 console.log(totalSold + " :Total dollars sold"); //Added to make sure things are being calculated correctly.
 var dollarsHour = totalSold / hoursWorked; //This is used to calculate the dollars per hour.
 console.log(dollarsHour + " :Dollars per hour sold"); //Added to make sure things are being calculated correctly.
 
 var tsNumber = parseFloat(ts1Sold) + parseFloat(ts2Sold); //Used to add up the total number of units - not dollars.
 console.log(tsNumber + " :Total number of Total Support's sold (1&2 year)"); //Added to make sure things are being calculated correctly.
-var attachRate = (tsNumber) / (computerSold); //Used to find the attachment rate.
+var attachRate = (Math.floor((tsNumber) / (computerSold) * 100)); //Used to find the attachment rate.
+//(Math.floor((number1 / number2) * 100));
 console.log(attachRate + " :Attach rate" ); //Added to make sure things are being calculated correctly.
 var attachRateAnswer = "Your have a current Total Support attachment rate of " + attachRate +"%."; //This will be used to show the users current attachment rate.
 console.log(attachRateAnswer + " :Attachment rate answer - before the user alert."); //Added to make sure the alert is working properly.
