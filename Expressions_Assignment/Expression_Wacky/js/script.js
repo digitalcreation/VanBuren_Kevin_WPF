@@ -16,10 +16,10 @@ var typeDeath = prompt ("On a scale of 1-10 how gruesome was the average death?"
 console.log(typeDeath + " :Prompts user for how gruesome the average death was - on a scale of 1-10");
 
 var totalScary = parseFloat(scary) + parseFloat(ghostsHaunted) + parseFloat(typeDeath);
-console.log(totalScary + " :Shows the total number from the prompts.");
+console.log(totalScary + " :Shows the total number from the prompts. If number is greater than 15 then it's haunted, if it's under it's not.");
 
-//if (typeDeath < 4) {
-  //  alert("The building isn't very haunted")
-//}   else {
-    //alert("The building is really haunted! If you are in it, get out now!")
-//}
+if (totalScary < 15) {
+    alert("The building isn't very haunted... Your probably just imagining things. Wait! What's that behind you!")
+}   else {
+    alert("The building is actually is haunted! If you are in it, get out right now! (But first click 'Ok' then run for your life.)")
+}
