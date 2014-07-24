@@ -20,7 +20,8 @@ if (storeSales === ""){ //Not allowing the user to leave the text field blank
 }*/
 
 var etSales = prompt ("Enter your week-to-date EasyTech sales, e.g. $1200:");
+console.log(etSales + " - EasyTech sales entered by user.");
 
 
-var penRate =  alert (etSales / storeSales);
+var penRate =  alert ("Your EasyTech penetration is " + etSales / storeSales);
 console.log(penRate + " Penetration rate.");
