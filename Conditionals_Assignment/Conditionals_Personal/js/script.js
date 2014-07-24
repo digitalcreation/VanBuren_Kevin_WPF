@@ -13,4 +13,9 @@ if (caloriesEaten === ""){ //Not allowing the user to leave the text field blank
 console.log(caloriesEaten + " - Calories eaten, entered by user.");
 
 var userWeight = prompt("To determine if you have eaten too many or not enough calories, enter in your weight.");
+if (userWeight === ""){ //Not allowing the user to leave the text field blank
+    alert("You CANNOT leave the text field blank, enter in a number."); //Alerting the user that they can't leave the text field empty.
+    console.log("Alert was sent because text field was left blank."); //Added to record the alert
+    userWeight = prompt("To determine if you have eaten too many or not enough calories, enter in your weight, e.g. 120, 150, etc.");
+}
 console.log(userWeight + " - The user's weight, entered by user.");
