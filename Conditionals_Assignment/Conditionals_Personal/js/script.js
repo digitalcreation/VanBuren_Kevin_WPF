@@ -3,6 +3,7 @@
 //07-24-14
 
 //Goal is to setup a calculation for counting the calories eaten in the day and to alert if it is above or below the recommend number.
+//This will not be 100% accurate because of the large number of variables involved, I will only be using the users weight to determine the proper amount of calories.
 
 var caloriesEaten = prompt("Enter in the total number of calories you have eaten today.");//This will prompt the user to enter in the total number of calories eaten.
 if (caloriesEaten === ""){ //Not allowing the user to leave the text field blank
@@ -18,4 +19,6 @@ if (userWeight === ""){ //Not allowing the user to leave the text field blank
     console.log("Alert was sent because text field was left blank."); //Added to record the alert
     userWeight = prompt("To determine if you have eaten too many or not enough calories, enter in your weight, e.g. 120, 150, etc.");
 }
-console.log(userWeight + " - The user's weight, entered by user.");
+console.log(userWeight + " - The user's weight, entered by user."); //Records the user's weight.
+
+//1250 for weight below 150, 1550 for above.
