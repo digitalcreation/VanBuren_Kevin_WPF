@@ -28,6 +28,7 @@ if (caloriesDinner === ""){
     console.log("Alert was sent because dinner text field was left blank."); //Added to record the alert
     caloriesDinner = prompt("Enter in the total number of calories you had for dinner, e.g. 500.");//This will prompt the user to enter in the total number of calories eaten.
 }
+console.log(caloriesDinner + " - Calories for dinner, entered by user.");
 
 var caloriesSnack = prompt("Enter in the total number of calories you had for any snacks throughout the day.");//This will prompt the user to enter in the total number of calories eaten.
 if (caloriesDinner === ""){
@@ -35,8 +36,10 @@ if (caloriesDinner === ""){
     console.log("Alert was sent because snack text field was left blank."); //Added to record the alert
     caloriesDinner = prompt("Enter in the total number of calories you had for any snacks throughout the day, e.g. 500.");//This will prompt the user to enter in the total number of calories eaten.
 }
+console.log(caloriesSnack + " - Calories for snacks, entered by user.");
 
-var totalCalories = ();
+var totalCalories = (caloriesBreakfast + caloriesDinner + caloriesLunch + caloriesSnack);
+console.log(totalCalories + " - Total calories calculation");
 
 
 var userWeight = prompt("To determine if you have eaten too many or not enough calories, enter in your weight.");
