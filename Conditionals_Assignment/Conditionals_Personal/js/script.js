@@ -60,5 +60,7 @@ console.log(userWeight + " - The user's weight, entered by user."); //Records th
 var lowerCalGoal = 1250;
 var HigherCalGoal = 1550;
 if(userWeight <= 150){
-
+    alert("Your goal is " + lowerCalGoal + "." + " You have eaten " + totalCalories + " today.")
+}else{
+    alert("Your goal is " + HigherCalGoal + "." + " You have eaten " + totalCalories + " today.")
 }
