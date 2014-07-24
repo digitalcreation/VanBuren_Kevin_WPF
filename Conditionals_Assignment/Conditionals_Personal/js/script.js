@@ -11,7 +11,7 @@ if (caloriesBreakfast === ""){ //Not allowing the user to leave the text field b
     alert("You CANNOT leave the text field blank, enter in a number."); //Alerting the user that they can't leave the text field empty.
     console.log("Alert was sent because breakfast text field was left blank."); //Added to record the alert
     caloriesBreakfast = prompt("Enter in the total number of calories you had for breakfast, e.g. 500.");//This will prompt the user to enter in the total number of calories eaten.
-}
+} //end of if
 console.log(caloriesBreakfast + " - Calories for breakfast, entered by user."); //Used to record cals eaten for breakfast.
 
 var caloriesLunch = prompt("Enter in the total number of calories you had for lunch.");//This will prompt the user to enter in the total number of calories eaten.
@@ -19,27 +19,27 @@ if (caloriesLunch === ""){
     alert("You CANNOT leave the text field blank, enter in a number."); //Alerting the user that they can't leave the text field empty.
     console.log("Alert was sent because lunch text field was left blank."); //Added to record the alert
     caloriesLunch = prompt("Enter in the total number of calories you had for lunch, e.g. 500.");//This will prompt the user to enter in the total number of calories eaten.
-}
-console.log(caloriesLunch + " - Calories for lunch, entered by user.");
+} //end of if
+console.log(caloriesLunch + " - Calories for lunch, entered by user."); //Used to record cals eaten for lunch.
 
 var caloriesDinner = prompt("Enter in the total number of calories you had for dinner.");//This will prompt the user to enter in the total number of calories eaten.
 if (caloriesDinner === ""){
     alert("You CANNOT leave the text field blank, enter in a number."); //Alerting the user that they can't leave the text field empty.
     console.log("Alert was sent because dinner text field was left blank."); //Added to record the alert
     caloriesDinner = prompt("Enter in the total number of calories you had for dinner, e.g. 500.");//This will prompt the user to enter in the total number of calories eaten.
-}
-console.log(caloriesDinner + " - Calories for dinner, entered by user.");
+} //end of if
+console.log(caloriesDinner + " - Calories for dinner, entered by user.");//Used to record cals eaten for dinner.
 
 var caloriesSnack = prompt("Enter in the total number of calories you had for any snacks throughout the day.");//This will prompt the user to enter in the total number of calories eaten.
 if (caloriesDinner === ""){
     alert("You CANNOT leave the text field blank, enter in a number."); //Alerting the user that they can't leave the text field empty.
     console.log("Alert was sent because snack text field was left blank."); //Added to record the alert
     caloriesDinner = prompt("Enter in the total number of calories you had for any snacks throughout the day, e.g. 500.");//This will prompt the user to enter in the total number of calories eaten.
-}
-console.log(caloriesSnack + " - Calories for snacks, entered by user.");
+} //end of if
+console.log(caloriesSnack + " - Calories for snacks, entered by user.");//Used to record cals eaten for snacks.
 
-var totalCalories = (caloriesBreakfast + caloriesDinner + caloriesLunch + caloriesSnack);
-console.log(totalCalories + " - Total calories calculation");
+var totalCalories = Number(caloriesBreakfast) + Number(caloriesDinner) + Number(caloriesLunch) + Number(caloriesSnack);
+console.log(totalCalories + " - Total calories calculation");//Used to record total calories eaten.
 
 
 var userWeight = prompt("To determine if you have eaten too many or not enough calories, enter in your weight.");
@@ -47,7 +47,7 @@ if (userWeight === ""){ //Not allowing the user to leave the text field blank
     alert("You CANNOT leave the text field blank, enter in a number."); //Alerting the user that they can't leave the text field empty.
     console.log("Alert was sent because text field was left blank."); //Added to record the alert
     userWeight = prompt("To determine if you have eaten too many or not enough calories, enter in your weight, e.g. 120, 150, etc.");
-}
+} //end of if
 console.log(userWeight + " - The user's weight, entered by user."); //Records the user's weight.
 
 
