@@ -6,19 +6,25 @@
 //This will not be 100% accurate because of the large number of variables involved, I will only be using the users weight to determine the proper amount of calories.
 //Needed: Meal 1, Meal 2, Meal 3
 
-var caloriesBreakfast = prompt("Enter in the total number of calories did you have for breakfast.");//This will prompt the user to enter in the total number of calories eaten.
+var caloriesBreakfast = prompt("Enter in the total number of calories you had for breakfast.");//This will prompt the user to enter in the total number of calories eaten.
 if (caloriesBreakfast === ""){ //Not allowing the user to leave the text field blank
     alert("You CANNOT leave the text field blank, enter in a number."); //Alerting the user that they can't leave the text field empty.
     console.log("Alert was sent because breakfast text field was left blank."); //Added to record the alert
-    caloriesBreakfast = prompt("Enter in the total number of calories you have eaten today, e.g. 500.");//This will prompt the user to enter in the total number of calories eaten.
+    caloriesBreakfast = prompt("Enter in the total number of calories you had for breakfast, e.g. 500.");//This will prompt the user to enter in the total number of calories eaten.
 }
 console.log(caloriesBreakfast + " - Calories for breakfast, entered by user."); //Used to record cals eaten for breakfast.
 
-var caloriesLunch = prompt("Enter in the total number of calories did you have for lunch.");//This will prompt the user to enter in the total number of calories eaten.
+var caloriesLunch = prompt("Enter in the total number of calories you had for lunch.");//This will prompt the user to enter in the total number of calories eaten.
 if (caloriesLunch === ""){
     alert("You CANNOT leave the text field blank, enter in a number."); //Alerting the user that they can't leave the text field empty.
     console.log("Alert was sent because lunch text field was left blank."); //Added to record the alert
+    caloriesLunch = prompt("Enter in the total number of calories you had for lunch, e.g. 500.");//This will prompt the user to enter in the total number of calories eaten.
 }
+console.log(caloriesLunch + " - Calories for lunch, entered by user.");
+
+var caloriesDinner = prompt("Enter in the total number of calories you had for dinner.");//This will prompt the user to enter in the total number of calories eaten.
+
+
 var userWeight = prompt("To determine if you have eaten too many or not enough calories, enter in your weight.");
 if (userWeight === ""){ //Not allowing the user to leave the text field blank
     alert("You CANNOT leave the text field blank, enter in a number."); //Alerting the user that they can't leave the text field empty.
@@ -26,7 +32,6 @@ if (userWeight === ""){ //Not allowing the user to leave the text field blank
     userWeight = prompt("To determine if you have eaten too many or not enough calories, enter in your weight, e.g. 120, 150, etc.");
 }
 console.log(userWeight + " - The user's weight, entered by user."); //Records the user's weight.
-
 
 
 //1250 for weight below 150, 1550 for above.
