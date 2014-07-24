@@ -4,7 +4,7 @@
 
 //Goal is to setup a calculation for counting the calories eaten in the day and to alert if it is above or below the recommend number.
 //This will not be 100% accurate because of the large number of variables involved, I will only be using the users weight to determine the proper amount of calories.
-//Needed: Meal 1, Meal 2, Meal 3
+//Needed: Meal 1, Meal 2, Meal 3, Snacks
 
 var caloriesBreakfast = prompt("Enter in the total number of calories you had for breakfast.");//This will prompt the user to enter in the total number of calories eaten.
 if (caloriesBreakfast === ""){ //Not allowing the user to leave the text field blank
@@ -23,6 +23,20 @@ if (caloriesLunch === ""){
 console.log(caloriesLunch + " - Calories for lunch, entered by user.");
 
 var caloriesDinner = prompt("Enter in the total number of calories you had for dinner.");//This will prompt the user to enter in the total number of calories eaten.
+if (caloriesDinner === ""){
+    alert("You CANNOT leave the text field blank, enter in a number."); //Alerting the user that they can't leave the text field empty.
+    console.log("Alert was sent because dinner text field was left blank."); //Added to record the alert
+    caloriesDinner = prompt("Enter in the total number of calories you had for dinner, e.g. 500.");//This will prompt the user to enter in the total number of calories eaten.
+}
+
+var caloriesSnack = prompt("Enter in the total number of calories you had for any snacks throughout the day.");//This will prompt the user to enter in the total number of calories eaten.
+if (caloriesDinner === ""){
+    alert("You CANNOT leave the text field blank, enter in a number."); //Alerting the user that they can't leave the text field empty.
+    console.log("Alert was sent because snack text field was left blank."); //Added to record the alert
+    caloriesDinner = prompt("Enter in the total number of calories you had for any snacks throughout the day, e.g. 500.");//This will prompt the user to enter in the total number of calories eaten.
+}
+
+var totalCalories = ();
 
 
 var userWeight = prompt("To determine if you have eaten too many or not enough calories, enter in your weight.");
