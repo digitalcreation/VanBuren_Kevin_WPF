@@ -15,3 +15,5 @@ alert("How many monkey's does it take to screw in a light bulb? To find the solu
 var monkeyGroom = prompt("How often do the monkeys groom each other a day?"); //Prompts the user to enter in a number amount.
 console.log(monkeyGroom + " - How often monkeys groom each other, entered by user"); //Records the number entered in by the user.
 
+var monkeyFling = prompt("How often do the monkeys fling their feces?"); //Prompts the user to enter in a number amount.
+console.log(monkeyFling + " - How often monkeys fling feces at each other, entered by user"); //Records the number entered in by the user.
