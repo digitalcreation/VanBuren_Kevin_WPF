@@ -14,6 +14,13 @@ alert("How many monkey's does it take to screw in a light bulb? To find the solu
 
 var monkeyGroom = prompt("How often do the monkey's groom each other a day?"); //Prompts the user to enter in a number amount for how many times a day the monkey's groom each other.
 console.log(monkeyGroom + " - How often monkey's groom each other, entered by user."); //Records the number entered in by the user.
+if (monkeyGroom === ""){
+    alert("For this scientific calculation to be accurate you need to enter in a numerical value!"); //Alerts the user they need to enter in a number.
+    monkeyGroom = prompt("How often do the monkey's groom each other a day? E.g. 12."); //Re-prompts the user to enter in a number amount for how many times a day the monkey's groom each other.
+}
+if (monkeyGroom >= 30){ //Setting up for if the user enters in a large number.
+    alert("Wow! Maybe the monkey's should open up a lice removal shop!"); //Alerts the user that over 30 is large number for the equation
+} //end of if
 
 var monkeyFling = prompt("How many times a day do the monkey's fling their feces?"); //Prompts the user to enter in a number amount for how many times a day the monkey's fling their feces.
 console.log(monkeyFling + " - How often monkey's fling feces at each other, entered by user."); //Records the number entered in by the user.
