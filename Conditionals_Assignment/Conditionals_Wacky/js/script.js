@@ -13,10 +13,10 @@
 alert("How many monkey's does it take to screw in a light bulb? To find the solution we need to know 4 things..."); //Alerting the user of what the calculation will be.
 
 
-var monkeyGroom = prompt("How often do the monkey's groom each other a day?"); //Prompts the user to enter in a number amount for how many times a day the monkey's groom each other.
+var monkeyGroom = prompt("How many times a day do the monkey's groom each other?"); //Prompts the user to enter in a number amount for how many times a day the monkey's groom each other.
 if (monkeyGroom === ""){ //Start of if text field is left empty for monkeyGroom.
     alert("For this scientific calculation to be accurate you need to enter in a numerical value!"); //Alerts the user they need to enter in a number.
-    monkeyGroom = prompt("How often do the monkey's groom each other a day? e.g. 12."); //Re-prompts the user to enter in a number amount for how many times a day the monkey's groom each other.
+    monkeyGroom = prompt("How many times a day do the monkey's groom each other? e.g. 12."); //Re-prompts the user to enter in a number amount for how many times a day the monkey's groom each other.
 }
 if (monkeyGroom >= 30){ //Setting up for an alert if the user enters in a large number.
     alert("Wow! Maybe the monkey's should open up a lice removal shop!"); //Alerts the user that over 30 is large number for the equation
@@ -52,8 +52,16 @@ if (monkeyAggression === ""){ //Start of if text field is left empty for monkeyA
     alert("For this scientific calculation to be accurate you need to enter in a numerical value!"); //Alerts the user they need to enter in a number.
     monkeyAggression = prompt("On a scale of 1 to 10, how aggressive are the monkey's? - 10 being really aggressive."); //Re-prompts the user to enter in a number amount of how aggressive the monkey's are.
 } //end of if
+if (monkeyAggression < 1){ //Start of if amount is less than 1 for monkeyAggression
+    alert("You entered " + monkeyAggression + " For this scientific calculation to be accurate you need to enter in a numerical value of no less than 1!");
+    monkeyAggression = prompt("On a scale of 1 to 10, how aggressive are the monkey's? - 10 being really aggressive."); //Re-prompts the user to enter in a number amount of how aggressive the monkey's are.
+} //end of if
 if (monkeyAggression > 10){ //Start of if amount is over 10 for monkeyAggression
     alert("You entered " + monkeyAggression + " For this scientific calculation to be accurate you need to enter in a numerical value of no more than 10!");
+    monkeyAggression = prompt("On a scale of 1 to 10, how aggressive are the monkey's? - 10 being really aggressive."); //Re-prompts the user to enter in a number amount of how aggressive the monkey's are.
+} //end of if
+if (monkeyAggression < 1){ //Start of if amount is less than 1 for monkeyAggression
+    alert("You entered " + monkeyAggression + " For this scientific calculation to be accurate you need to enter in a numerical value of no less than 1!");
     monkeyAggression = prompt("On a scale of 1 to 10, how aggressive are the monkey's? - 10 being really aggressive."); //Re-prompts the user to enter in a number amount of how aggressive the monkey's are.
 } //end of if
 console.log(monkeyAggression + " - Scale from 1-10 on how aggressive the monkey's are, entered by user."); //Records the number entered in by the user.
