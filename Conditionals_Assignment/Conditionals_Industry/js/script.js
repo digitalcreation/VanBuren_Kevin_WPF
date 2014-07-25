@@ -39,4 +39,4 @@ if (etSales === ""){ //Not allowing the user to leave the text field blank.
 
 var penRate =  (etSales / storeSales * 100); //Used to calculate the users penetration rate.
 console.log(penRate + "% Penetration rate."); //Records the users penetration rate.
-(penRate >= 4) ? alert ("You have a current EasyTech penetration rate of " + penRate + "%. You are on goal!") : alert ("You have a current EasyTech penetration rate of " + penRate + "%. You are below goal!"); //If pen rate is above 4$, on goal. Otherwise, below goal.;
+(penRate >= 4) ? alert ("You have a current EasyTech penetration rate of " + penRate + "%. You are on or above goal!") : alert ("You have a current EasyTech penetration rate of " + penRate + "%. You are below goal!"); //If pen rate is above 4$, on goal. Otherwise, below goal.;
