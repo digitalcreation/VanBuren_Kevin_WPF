@@ -26,14 +26,22 @@ var monkeyFling = prompt("How many times a day do the monkey's fling their feces
 console.log(monkeyFling + " - How often monkey's fling feces at each other, entered by user."); //Records the number entered in by the user.
 if (monkeyFling === ""){
     alert("For this scientific calculation to be accurate you need to enter in a numerical value!"); //Alerts the user they need to enter in a number.
-    monkeyFling = prompt("How many times a day do the monkey's fling their feces? e.g. 10."); //Prompts the user to enter in a number amount for how many times a day the monkey's fling their feces.
+    monkeyFling = prompt("How many times a day do the monkey's fling their feces? e.g. 10."); //Re-prompts the user to enter in a number amount for how many times a day the monkey's fling their feces.
 }
 if (monkeyFling >= 20){ //Setting up for an alert if the user enters in a large number.
-    alert("Wow! Be sure to keep an eye out for flying fecal matter!"); //Alerts the user that over 30 is large number for the equation
+    alert("Wow! Be sure to keep an eye out for flying fecal matter!"); //Alerts the user that over 20 is large number for the equation
 } //end of if
 
 var monkeyPlay = prompt("How many hours a day do the monkey's play games with each other?"); //Prompts the user to enter in a number amount for how long the monkey's play a day.
 console.log(monkeyPlay + " - How many hours/day the monkey's play games, entered by user."); //Records the number entered in by the user.
+if (monkeyPlay === ""){
+    alert("For this scientific calculation to be accurate you need to enter in a numerical value!"); //Alerts the user they need to enter in a number.
+    monkeyPlay = prompt("How many hours a day do the monkey's play games with each other? e.g. 5."); //Re-prompts the user to enter in a number amount for how long the monkey's play a day.
+}
+if (monkeyPlay > 24){ //Setting up for an alert if the user enters in a large number.
+    alert("There are only 24 hours in a day! For this scientific calculation to be accurate you need to enter in a REALISTIC numerical value!"); //Alerts the user that there is only 24 hours in a day.
+    monkeyPlay = prompt("How many hours a day do the monkey's play games with each other? e.g. 5."); //Re-prompts the user to enter in a number amount for how long the monkey's play a day.
+} //end of if
 
 var monkeyAggression = prompt("On a scale of 1 to 10, how aggressive are the monkey's? - 10 being really aggressive."); //Prompts the user to enter in a number amount of how aggressive the monkey's are.
 console.log(monkeyAggression + " - Scale from 1-10 on how aggressive the monkey's are, entered by user."); //Records the number entered in by the user.
