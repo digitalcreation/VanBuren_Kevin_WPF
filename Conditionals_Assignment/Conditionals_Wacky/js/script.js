@@ -24,4 +24,6 @@ console.log(monkeyPlay + " - How many hours/day the monkey's play games, entered
 var monkeyAggression = prompt("On a scale of 1 to 10, how aggressive are the monkey's? - 10 being really aggressive."); //Prompts the user to enter in a number amount of how aggressive the monkey's are.
 console.log(monkeyAggression + " - Scale from 1-10 on how aggressive the monkey's are, entered by user."); //Records the number entered in by the user.
 
-
+var monkeyIntelligence = Number(monkeyGroom) - Number(monkeyFling) + Number(monkeyPlay) - Number(monkeyAggression); //The scientific calculation to determine how many monkey's it takes to screw in a light bulb.
+console.log(monkeyIntelligence + " - The number of monkeys it takes to screw in a light bulb - the final result."); //Records how many monkey's it takes to screw in a light bulb.
+alert("It takes " + monkeyIntelligence + " monkey's to screw in a light bulb."); //Alerts the user of how many monkey's it takes to screw in a light bulb.
