@@ -45,6 +45,14 @@ if (monkeyPlay > 24){ //Setting up for an alert if the user enters in a large nu
 
 var monkeyAggression = prompt("On a scale of 1 to 10, how aggressive are the monkey's? - 10 being really aggressive."); //Prompts the user to enter in a number amount of how aggressive the monkey's are.
 console.log(monkeyAggression + " - Scale from 1-10 on how aggressive the monkey's are, entered by user."); //Records the number entered in by the user.
+if (monkeyAggression === ""){
+    alert("For this scientific calculation to be accurate you need to enter in a numerical value!"); //Alerts the user they need to enter in a number.
+    monkeyAggression = prompt("On a scale of 1 to 10, how aggressive are the monkey's? - 10 being really aggressive."); //Re-prompts the user to enter in a number amount of how aggressive the monkey's are.
+} //end of if
+if (monkeyAggression > 10){
+    alert("You entered " + monkeyAggression + " For this scientific calculation to be accurate you need to enter in a numerical value of no more than 10!");
+    monkeyAggression = prompt("On a scale of 1 to 10, how aggressive are the monkey's? - 10 being really aggressive."); //Re-prompts the user to enter in a number amount of how aggressive the monkey's are.
+} //end of if
 
 var monkeyIntelligence = Number(monkeyGroom) - Number(monkeyFling) + Number(monkeyPlay) - Number(monkeyAggression); //The scientific calculation to determine how many monkey's it takes to screw in a light bulb.
 console.log(monkeyIntelligence + " - The number of monkeys it takes to screw in a light bulb - the final result."); //Records how many monkey's it takes to screw in a light bulb.
