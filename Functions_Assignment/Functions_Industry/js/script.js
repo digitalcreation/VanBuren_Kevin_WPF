@@ -54,13 +54,6 @@ function marketBasket$(entry2, entry3, entry4){ //Start of the marketBasket$ fun
     return totalMB; //returns the variable so the results can be saved and shown to the user.
 } //end of function
 
-//MB pen rate anonymous function
-var calcMBPenRate = function(computers, attachments){
-    var mbPenRate = (attachments/computers) * 100;
-    return mbPenRate
-};
-var mbPenRateAnswer = calcMBPenRate(pcSold, totalAttachments);
-console.log(mbPenRateAnswer + "%");
 
 //If MB, else
 if (mbResults <= 200){ //start of if (less than or equal to 200)
@@ -69,6 +62,15 @@ if (mbResults <= 200){ //start of if (less than or equal to 200)
     alert("Your total Market Basket is: $" + mbResults + "! You are doing great keep it up!"); //Alerts the user of the total MB and that they are doing great if MB $'s are more than 200.
 } //end of if/else
 
+//MB pen rate anonymous function
+var calcMBPenRate = function(computers, attachments){ //Start of the anonymous function
+    var mbPenRate = (attachments/computers) * 100; //the variable that calculates the MB pen rate then converts it to a % value.
+    return mbPenRate; //Returns the variable
+}; //end of anonymous function
+
+var mbPenRateAnswer = calcMBPenRate(pcSold, totalAttachments); //Sets up the variables to use within the anonymous function.
+console.log(mbPenRateAnswer + "% - MB pen rate, calculation"); //Stores the MB pen rate calculation.
+(mbPenRateAnswer <= 59) ? alert("Your current Market Basket penetration rate is " + mbPenRateAnswer + "%. You need to step it up if plan to be on goal!") : alert("Your current Market Basket penetration rate is " + mbPenRateAnswer + "%! You are doing great keep it up!");
 
 //The following comment is used to easily setup NaN and "" while loop.
 /*
