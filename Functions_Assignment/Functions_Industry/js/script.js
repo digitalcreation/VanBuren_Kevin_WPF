@@ -34,9 +34,12 @@ while(isNaN(accSold) || accSold === ""){
 }
 console.log("$" + accSold + " - Total dollars($) of other accessories sold, entered by the user."); //Stores the $'s of other accessories sold that the user entered.
 
-var mbResults = marketBasket$(ts1Sold, ts2Sold, accSold);
-    console.log(mbResults);
+var ts1convert = (ts1Sold * 160);
+var ts2convert = (ts2Sold * 260);
 
+//Total MB $'s sold function
+var mbResults = marketBasket$(ts1convert, ts2convert, accSold);
+    console.log(mbResults);
 function marketBasket$(entry2, entry3, entry4){
     var totalMB = (Number(entry2) + Number(entry3) + Number(entry4));
     return totalMB;
