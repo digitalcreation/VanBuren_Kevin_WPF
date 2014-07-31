@@ -34,6 +34,14 @@ while(isNaN(accSold) || accSold === ""){
 }
 console.log("$" + accSold + " - Total dollars($) of other accessories sold, entered by the user."); //Stores the $'s of other accessories sold that the user entered.
 
+var mbResults = marketBasket$(ts1Sold, ts2Sold, accSold);
+    console.log(mbResults);
+
+function marketBasket$(entry2, entry3, entry4){
+    var totalMB = (Number(entry2) + Number(entry3) + Number(entry4));
+    return totalMB;
+}
+
 
 //The following comment is used to easily setup NaN and "" while loop.
 /*
