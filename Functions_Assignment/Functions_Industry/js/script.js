@@ -47,7 +47,13 @@ function marketBasket$(entry2, entry3, entry4){ //Start of the marketBasket$ fun
     return totalMB; //returns the variable so the results can be saved and shown to the user.
 }
 
-alert("Your total Market Basket is: $" + mbResults + "!");
+//If MB, else
+if (mbResults <= 200){ //start of if (less than or equal to 200)
+    alert("Your total Market Basket is: $" + mbResults + "! You need to step it up if plan to be on goal!"); //Alerts the user of the total MB and to step it up if the MB $'s are less than 200.
+}else{ //start of else (over 200)
+    alert("Your total Market Basket is: $" + mbResults + "! You are doing great keep it up!"); //Alerts the user of the total MB and that they are doing great if MB $'s are more than 200.
+} //end of if/else
+
 
 //The following comment is used to easily setup NaN and "" while loop.
 /*
