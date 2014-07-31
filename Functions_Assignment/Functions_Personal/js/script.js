@@ -28,6 +28,13 @@ for(nonActiveHours ; isNaN(nonActiveHours) || nonActiveHours === "";){
 }
 console.log(nonActiveHours + " - Number of hours spent doing something non-active, entered by the user.");
 //The following comment is used to easily setup NaN and "" while loop.
+
+var productivity = Number(workHours*10) - (Number(sleepHours)/2) + Number(activityHours*3) - (Number(nonActiveHours)/2) * 10;
+console.log(productivity + "% - Productive, calculation.");
+
+var totalProductivity = Number(workHours) + Number(sleepHours) + Number(activityHours) + Number(nonActiveHours);
+(totalProductivity > 24) ? alert("The total hours you entered is: " + totalProductivity + ". You cannot exceed 24 hours, refresh the page to restart the calculation.") : alert("Based on your entry, you are " + productivity + "% productive.");
+
 /*
  while(isNaN() ||  === ""){
 
