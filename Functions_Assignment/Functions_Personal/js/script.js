@@ -15,6 +15,12 @@ for(sleepHours ; isNaN(sleepHours) || sleepHours === "";){
     sleepHours= prompt("How many hours a day do you sleep? You cannot leave the text field blank and you must enter in a number.");
 }
 console.log(sleepHours + " - Number of hours slept, entered by the user.");
+
+var activityHours = prompt("How many hours a day are you doing something active (cleaning, exercising, etc)?");
+for(activityHours ; isNaN(activityHours) || activityHours === "";){
+    activityHours = prompt("How many hours a day are you doing something active (cleaning, exercising, etc)? You cannot leave the text field blank and you must enter in a number.");
+}
+console.log(activityHours + " - Number of hours spent doing something active, entered by the user.");
 //The following comment is used to easily setup NaN and "" while loop.
 /*
  while(isNaN() ||  === ""){
