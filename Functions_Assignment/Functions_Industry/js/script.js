@@ -30,7 +30,7 @@ console.log(ts1Sold + " - Number of 1 year Total Supports sold, entered by the u
 //2 year TS sold
 var ts2Sold = prompt("How many of the computers sold had 2 year Total Support attached?"); //Prompts the user for how many computers have 2 year total support attached, used to calculate market basket $'s and pen rate.
 while(isNaN(ts2Sold) || ts2Sold === ""){ //start of while loop to make sure the user enters a number and doesn't leave the field blank
-    ts2Sold = prompt("inloopHow many of the computers sold had 2 year Total Support attached?"); //Re-prompts the user for how many computers have 2 year total support attached, used to calculate market basket $'s and pen rate.
+    ts2Sold = prompt("How many of the computers sold had 2 year Total Support attached?"); //Re-prompts the user for how many computers have 2 year total support attached, used to calculate market basket $'s and pen rate.
 } //End of while loop.
 console.log(ts2Sold + " - Number of 2 year Total Supports sold, entered by the user."); //Stores the number of 2 year total supports sold that the user entered.
 
