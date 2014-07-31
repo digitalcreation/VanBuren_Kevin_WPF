@@ -32,19 +32,22 @@ var accSold = prompt("Enter in the total dollars of other accessories (software,
 while(isNaN(accSold) || accSold === ""){
     accSold = prompt("Enter in the total dollars of other accessories (software, misc EasyTech services, bags/covers, etc) that were sold. Round to the nearest dollar and exclude the '$'. You must enter a number and you cannot leave the text field blank."); //Re-prompts the user for the total $'s of other accessories sold, used to calculate MB $'s and pen rate.
 }
-console.log("$" + accSold + " - Total dollars($) of other accessories sold, entered by the user."); //Stores the $'s of other accessories sold that the user entered.
+console.log("$" + accSold + " - Total dollars of other accessories sold, entered by the user."); //Stores the $'s of other accessories sold that the user entered.
 
-var ts1convert = (ts1Sold * 160);
-var ts2convert = (ts2Sold * 260);
+//TS 1 year & 2 year $ conversion
+var ts1convert = (ts1Sold * 160); //Converts the number of TS 1 year to the $ amount
+var ts2convert = (ts2Sold * 260); //Converts the number of TS 2 year to the $ amount
 
 //Total MB $'s sold function
-var mbResults = marketBasket$(ts1convert, ts2convert, accSold);
-    console.log(mbResults);
-function marketBasket$(entry2, entry3, entry4){
-    var totalMB = (Number(entry2) + Number(entry3) + Number(entry4));
-    return totalMB;
+var mbResults = marketBasket$(ts1convert, ts2convert, accSold); //Used to invoke or call the markerBasket$ function.
+    console.log("$" + mbResults + " - Total MB dollars, calculation."); //Stores the number of the MB calculation.
+
+function marketBasket$(entry2, entry3, entry4){ //Start of the marketBasket$ function.
+    var totalMB = (Number(entry2) + Number(entry3) + Number(entry4)); //The variable within the function that will calculate the total MB $'s.
+    return totalMB; //returns the variable so the results can be saved and shown to the user.
 }
 
+alert("Your total Market Basket is: $" + mbResults + "!");
 
 //The following comment is used to easily setup NaN and "" while loop.
 /*
