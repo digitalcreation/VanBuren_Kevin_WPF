@@ -54,6 +54,14 @@ function marketBasket$(entry2, entry3, entry4){ //Start of the marketBasket$ fun
     return totalMB; //returns the variable so the results can be saved and shown to the user.
 } //end of function
 
+//MB pen rate anonymous function
+var calcMBPenRate = function(computers, attachments){
+    var mbPenRate = (attachments/computers) * 100;
+    return mbPenRate
+};
+var mbPenRateAnswer = calcMBPenRate(pcSold, totalAttachments);
+console.log(mbPenRateAnswer + "%");
+
 //If MB, else
 if (mbResults <= 200){ //start of if (less than or equal to 200)
     alert("Your total Market Basket is: $" + mbResults + "! You need to step it up if plan to be on goal!"); //Alerts the user of the total MB and to step it up if the MB $'s are less than 200.
